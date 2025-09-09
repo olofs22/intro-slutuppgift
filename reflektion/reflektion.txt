@@ -1,0 +1,11 @@
+Innan kursen visste jag på ett ungefär vad det var för något. Typ att man skriver kod och bygger mjukvara på det sättet men inte alls mycket om detaljer.
+Nu vet jag hur man hanterar github och hur man använder olika IDE's för att skapa, uppdatera och redigera filer. Har även en lätt förståelse för HTML CSS och JavaScript.
+
+DevOps är hur man använder mjukvara, hårdvara och människor för att skapa och utveckla mjukvara för att lösa problem i riktiga livet genom kod. Om jag förstått rätt.
+
+Spännande om molnet är att ta reda på hur jag kommer kunna använda det för att skapa mina applikationer. Själva intergrationen av molntjänster i mina program ska bli intressant att se hur man gör, att få en förståelse för det fungerar.
+Det som känns lite svårt är hur man ska problemlösa när man stöter på problem. Efter idag (tisdag när vi gjorde github actions) kan jag säga att felsökning kommer bli intressant. 
+
+uppfattning jag har fått kring att vara en systemutvecklare i ett team är att man ska försöka få ut allas styrkor och få de att fungera för att så effektivt som möjligt klara det mål man har. Man kanske delar upp i grupper eller låter en person som är duktig på något bara göra sin grej.
+
+Mest intressant hittills måste vara att bara få förståelse kring hur git fungerar och se hur ens projekt byggs och blir något helt annat än vad man började med. Github actions var också kul att hålla på med.
