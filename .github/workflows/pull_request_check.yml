@@ -11,9 +11,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Dummy step: kör bara en enkel check
-      - name: Run check
-        run: echo "✅ Checks passed!"   # byt ut till lint/test om du vill
+      # Dummy check, always success
+      - name: Run dummy check
+        run: |
+          echo "Running dummy check..."
+          exit 0
 
       - name: Notify Discord
         if: always()
