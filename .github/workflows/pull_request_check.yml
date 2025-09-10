@@ -11,7 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Dummy check, always success
       - name: Run dummy check
         run: |
           echo "Running dummy check..."
@@ -31,4 +30,4 @@ jobs:
 
           curl -s -H "Content-Type: application/json" \
             -d "{\"content\": \"$MESSAGE\"}" \
-            "$DISCORD_HOOK"
+            "$DISCORD_WEBHOOK" || true
