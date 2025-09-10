@@ -9,3 +9,5 @@ Det som känns lite svårt är hur man ska problemlösa när man stöter på problem. E
 uppfattning jag har fått kring att vara en systemutvecklare i ett team är att man ska försöka få ut allas styrkor och få de att fungera för att så effektivt som möjligt klara det mål man har. Man kanske delar upp i grupper eller låter en person som är duktig på något bara göra sin grej.
 
 Mest intressant hittills måste vara att bara få förståelse kring hur git fungerar och se hur ens projekt byggs och blir något helt annat än vad man började med. Github actions var också kul att hålla på med.
+
+Blev precis klar med att göra så att jag får notifiaktioner i discord med min bot när man gör en ny pull request. Först fungerade det inte för att jagh inte hade lagt in min länk i secrets men hade dock gjort en secret. Sen hade den fel namn i min kod så den kördes inte. Men nu fungerar det och jag tycker det är ganska kul att hålla på med det här! :)S
