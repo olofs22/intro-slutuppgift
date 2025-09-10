@@ -20,7 +20,7 @@ jobs:
       - name: Notify Discord
         if: always()
         env:
-          DISCORD_WEBHOOK: ${{https://discordapp.com/api/webhooks/1415311079155826698/Sf-QzTDCmSrve2zm-d01P6wSSbw2oOp8tr_1cUaoKdaoVLgbj6nMViv9LTks3aHvNzzu}}
+          DISCORD_WEBHOOK:  ${{ secrets.DISCORD_WEBHOOK }}
         run: |
           STATUS="${{ job.status }}"
           if [ "$STATUS" = "success" ]; then
@@ -31,4 +31,4 @@ jobs:
 
           curl -s -H "Content-Type: application/json" \
             -d "{\"content\": \"$MESSAGE\"}" \
-            "$https://discordapp.com/api/webhooks/1415311079155826698/Sf-QzTDCmSrve2zm-d01P6wSSbw2oOp8tr_1cUaoKdaoVLgbj6nMViv9LTks3aHvNzzu"
+            "$DISCORD_WEBHOOK"
