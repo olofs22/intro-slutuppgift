@@ -1,0 +1,21 @@
+Vad är skillnaden mellan IaaS, PaaS och SaaS? 
+* IaaS (Infrastructure as a Service) är infrastruktur i form av mjukvara och tjänster som till exempel: servrar, lagringstjänster och nätverk. 
+	PaaS (PLatform as a Service) är plattformar som ger en mer komplett lösning än IaaS.PaaS är kompletta utvecklingtjänster som man kan bygga , testa och distribuera applikationer på.
+	SaaS (Software as a Service) är klar molnbaserad mjukvara som en slutanvänder använder direkt.
+	Skillnaden mellan dessa är att det är olika nivåer av kontroll kring din mjukvara. IaaS ger mest kontroll men det innebär också att du måste välja vilken server, lagringstjänst osv. du ska använda.
+	PaaS ger lite mindre kontroll men är en mer komplett och "enklare" att använda. Här kan du direkt bygga, test och distribuera din applikation.
+	SaaS ger mkinst kontroll men är det enklaste och snabbaste. Här får du färdiga applikationer du kan använda för att nå ditt mål men är inte lika anpassningsbart. 
+
+Vad gör Git och vad är Github?
+	*Git är ett versionshanteringssystem som gör det enklare att hålla koll på ändringar i filer och kunna sortera versioner. Github är en plattform som använder Git för att göra det enkelt att hålla koll på dina projekt och andras. Man kan dela projekt eller ta del av andras projekt och ge ideer för förbättring. Github finns också för att göra det enkelt att samarbeta i ett team när man gör projekt tillsammans.
+
+Vad är ett informationssystem?
+	*Informationssystem är system samlar in, bearbetat, lagrar och disponerar information för att vi människor ska göra bättre beslut.
+
+Vad är CIA-triaden?
+	*Confidentiality, Integrity, Availability. När man ska utforma informationsäkerhet för ett system ska man fokusera på att gära dessa tre saker så bra som möjligt. Sekretess innebär att bara de som ska ha tillgång till informationen har det och de som inte ska ha det inte kommer åt. Det kan man ha t.ex. genom att ha inloggningssystem som är specifika för arbetsplatsen t.ex. som vi har med våran skola. Kryptering är också en teknik som används för att öka sekretessen.
+	Integritet innebär att informationen i systemet som kommer att användas är korrekt. Hur kul är det när det står att bussen ska vara framme nu men den inte är i närheten? Man ska även se till att informationen siom matats in inte blir manipuleras i efterhand (om den inte ska det). Exempel på teknik som hjälper med integritet är t.ex. git och github.
+	Tillgänglighet innebär att informationen som vi sett till är säker och har hög integritet nu är enkelt tillgänglig för de som ska ha tillgång till det. Detta kan vara en webbsida som t.ex. Learnpoint där vi elever och lärare kommer åt det men bara vi på skolan. 
+
+Vad är continious intergration/CI?
+	*Det är nästan som en vana man har i utvkeckling för minimera risken för buggar och fel i projekt. Man skickar en ny version av kod till t.ex. ett Github repositry där den har en check (github action) som kollar ifall koden fungerar som den ska eller om något kommer krocka. Ifall det inte gör det kan man merga sin branch med main. Man vill också skicka nya PR ofta så det blir mindre skillnad i koden och i sånna fall kanske mindre problem. När koden skickas till ett CI system byggs den, testas och verifieras av systemet.
