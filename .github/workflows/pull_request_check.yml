@@ -1,0 +1,34 @@
+﻿name: PR check + Discord
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  pr-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Exempel: kör tester – byt ut till ditt eget kommando
+      - name: Run tests
+        run: |
+          echo "Running tests..."
+          npm test || exit 1
+
+      - name: Notify Discord
+        if: always()
+        env:
+          DISCORD_WEBHOOK: ${{https://discordapp.com/api/webhooks/1415311079155826698/Sf-QzTDCmSrve2zm-d01P6wSSbw2oOp8tr_1cUaoKdaoVLgbj6nMViv9LTks3aHvNzzu}}
+        run: |
+          STATUS="${{ job.status }}"
+          if [ "$STATUS" = "success" ]; then
+            MESSAGE="✅ PR #${{ github.event.pull_request.number }} passed"
+          else
+            MESSAGE="❌ PR #${{ github.event.pull_request.number }} failed"
+          fi
+
+          curl -s -H "Content-Type: application/json" \
+            -d "{\"content\": \"$MESSAGE\"}" \
+            "$https://discordapp.com/api/webhooks/1415311079155826698/Sf-QzTDCmSrve2zm-d01P6wSSbw2oOp8tr_1cUaoKdaoVLgbj6nMViv9LTks3aHvNzzu"
