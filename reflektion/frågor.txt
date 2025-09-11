@@ -5,7 +5,7 @@ Vad är skillnaden mellan IaaS, PaaS och SaaS?
 	Skillnaden mellan dessa är att det är olika nivåer av kontroll kring din mjukvara. IaaS ger mest kontroll men det innebär också att du måste välja vilken server, lagringstjänst osv. du ska använda.
 	PaaS ger lite mindre kontroll men är en mer komplett och "enklare" att använda. Här kan du direkt bygga, test och distribuera din applikation.
 	SaaS ger mkinst kontroll men är det enklaste och snabbaste. Här får du färdiga applikationer du kan använda för att nå ditt mål men är inte lika anpassningsbart. 
-gggg
+
 Vad gör Git och vad är Github?
 	*Git är ett versionshanteringssystem som gör det enklare att hålla koll på ändringar i filer och kunna sortera versioner. Github är en plattform som använder Git för att göra det enkelt att hålla koll på dina projekt och andras. Man kan dela projekt eller ta del av andras projekt och ge ideer för förbättring. Github finns också för att göra det enkelt att samarbeta i ett team när man gör projekt tillsammans.
 
